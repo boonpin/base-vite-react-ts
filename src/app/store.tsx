@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { REDUX_ACTIONS } from "@/src/app/constants";
 
 export const useAppStore = () => {
-    const {app} = useSelector((state: any) => state);
+    const app = useSelector((state: any) => state.app);
     const {auth, user, settings, time, version} = app;
     return {auth, user, time, settings, version};
 };

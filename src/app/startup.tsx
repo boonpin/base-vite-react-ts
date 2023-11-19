@@ -6,7 +6,7 @@ import { AUTH_METHOD, STORAGE_KEYS } from "@/src/app/constants";
 import { BrowserRouter } from "react-router-dom";
 import { useService } from "@/src/app/services";
 import { useAppStore } from "@/src/app/store";
-import { AppRoute } from "@/src/app/routes/portal.route.tsx";
+import { AppRoute } from "@/src/app/routes";
 import { APP_STYLE } from "@/src/config.ts";
 
 

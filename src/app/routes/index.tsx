@@ -1,1 +1,1 @@
-export { PortalRoute } from "./portal.route";
+export { AppRoute } from "./app.route";

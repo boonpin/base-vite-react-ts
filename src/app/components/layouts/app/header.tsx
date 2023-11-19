@@ -31,7 +31,7 @@ export const Header: React.FC<{ siderWidth?: number, menuCollapsed?: boolean, on
     }, [size]);
 
     const DASHBOARD_URL = useMemo(() => {
-        return "/admin/dashboard";
+        return "/home";
     }, []);
 
     const {token} = theme.useToken();

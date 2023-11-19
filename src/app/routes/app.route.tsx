@@ -3,7 +3,7 @@ import { FullMidLayout } from "@/src/app/components/layouts/app/layout";
 import { Button, Result } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 
-import { Home } from "@/src/app/containers";
+import { Home, Home2 } from "@/src/app/containers";
 
 const Err404 = () => {
     const location = useLocation();
@@ -30,6 +30,7 @@ export const AppRoute = () => {
         <Routes>
             <Route path="/" element={<Navigate to="/home"/>}/>
             <Route path="/home" element={<Home/>}/>
+            <Route path="/home2" element={<Home2/>}/>
             <Route path="*" element={<Err404/>}/>
         </Routes>
     );
