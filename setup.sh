@@ -14,7 +14,7 @@ fi
 
 WORK_DIR=$(pwd)
 
-git clone https://github.com/boonpin/base-vite-react-ts.git template
+git clone https://github.com/boonpin/base-vite-react-ts.git "$PROJECT_NAME"-template
 
 nvm use 18
 yarn create vite "$PROJECT_NAME" --template react-ts
