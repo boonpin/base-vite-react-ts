@@ -5,14 +5,20 @@ source $(brew --prefix nvm)/nvm.sh
 
 set -e
 
-PROJECT_NAME="test123"
+PROJECT_NAME=$1
+
+if [ -z "$PROJECT_NAME" ]; then
+    echo "Error: project name is require."
+    exit
+fi
+
 WORK_DIR=$(pwd)
 
 git clone https://github.com/boonpin/base-vite-react-ts.git template
 
 nvm use 18
-yarn create vite $PROJECT_NAME --template react-ts
-cd $PROJECT_NAME
+yarn create vite "$PROJECT_NAME" --template react-ts
+cd "$PROJECT_NAME"
 yarn add dayjs react-icons axios \
     react-redux @reduxjs/toolkit \
     less less-loader \
