@@ -20,7 +20,7 @@ nvm use 18
 yarn create vite "$PROJECT_NAME" --template react-ts
 cd "$PROJECT_NAME"
 yarn add dayjs react-icons axios \
-    react-redux @reduxjs/toolkit \
+    react-redux @reduxjs/toolkit connected-react-router \
     less less-loader \
     antd @ant-design/icons \
     react-router-dom \
@@ -35,3 +35,6 @@ cp $WORK_DIR/template/tsconfig.json $WORK_DIR/$PROJECT_NAME/tsconfig.json
 cp $WORK_DIR/template/tsconfig.node.json $WORK_DIR/$PROJECT_NAME/tsconfig.paths.json
 cp $WORK_DIR/template/tsconfig.paths.json $WORK_DIR/$PROJECT_NAME/tsconfig.paths.json
 cp $WORK_DIR/template/vite.config.ts $WORK_DIR/$PROJECT_NAME/vite.config.ts
+
+echo ">> cleaning up ..."
+rm -rf $WORK_DIR/template
